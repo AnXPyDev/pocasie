@@ -56,7 +56,7 @@ public class DatapointEditor extends Dialog {
         String[] weather_options = Arrays.copyOf(Datapoint.weather_const, Datapoint.weather_const.length + 1);
         weather_options[weather_options.length - 1] = "Weather";
 
-        ArrayAdapter<String> spinner_adapter = new ArrayAdapter<>(getContext(), android.R.layout.simple_spinner_item, weather_options) {
+        ArrayAdapter<String> spinner_adapter = new ArrayAdapter<>(getContext(), R.layout.weather_spinner_item, weather_options) {
             @Override
             public int getCount() {
                 return super.getCount() - 1;

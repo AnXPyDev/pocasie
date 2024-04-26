@@ -10,6 +10,10 @@ android {
         enable = true
     }
 
+    dataBinding {
+        enable = true
+    }
+
     defaultConfig {
         applicationId = "com.example.pocasie"
         minSdk = 27

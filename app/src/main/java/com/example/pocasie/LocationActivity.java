@@ -89,6 +89,7 @@ public class LocationActivity extends AppCompatActivity implements DatapointMana
 
         binding.selectDate.setOnClickListener((view) -> selectDate());
         binding.add.setOnClickListener((view) -> createDatapoint());
+        binding.close.setOnClickListener((view) -> finish());
     }
 
 

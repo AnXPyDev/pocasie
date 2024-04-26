@@ -18,7 +18,7 @@ import orm.ModelFactory;
 public class WeatherDatabase extends Database {
 
     public WeatherDatabase(Context context) {
-        super(context, "weather", 6);
+        super(context, "weather", 8);
     }
 
     @Override

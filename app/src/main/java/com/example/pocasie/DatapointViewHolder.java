@@ -38,8 +38,9 @@ public class DatapointViewHolder extends ViewBindingHolder<Datapoint> {
     protected void bind(Datapoint datapoint) {
         this.datapoint = datapoint;
         binding.time.setText(datapoint.time.format(timeFormat));
-        binding.temperature.setText(String.format("%.2f", (double)datapoint.temperature / 100.d));
+        binding.temperature.setText(String.format("%.2f°C", (double)datapoint.temperature / 100.d));
         binding.weather.setText(Datapoint.weather_const[datapoint.weather]);
+        binding.weatherIcon.setImageResource(Datapoint.weahter_icon[datapoint.weather]);
     }
 
     public static class Factory extends ViewBindingHolder.Factory {

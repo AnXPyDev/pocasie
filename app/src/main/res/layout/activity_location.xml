@@ -30,7 +30,7 @@
             android:id="@+id/select_date"
             android:layout_width="0dp"
             android:layout_height="0dp"
-            android:background="?android:selectableItemBackground"
+            android:background="?actionBarItemBackground"
             android:clickable="true"
             app:layout_constraintDimensionRatio="W,1:1"
             app:layout_constraintEnd_toStartOf="@+id/add"
@@ -57,7 +57,34 @@
             android:id="@+id/add"
             android:layout_width="0dp"
             android:layout_height="0dp"
-            android:background="?android:selectableItemBackground"
+            android:background="?actionBarItemBackground"
+            android:clickable="true"
+            app:layout_constraintDimensionRatio="W,1:1"
+            app:layout_constraintEnd_toStartOf="@+id/close"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintVertical_bias="0.5">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/font_awesome"
+                android:text="&#x2b;"
+                android:textSize="20sp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.5"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintVertical_bias="0.5" />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/close"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:background="?actionBarItemBackground"
             android:clickable="true"
             app:layout_constraintDimensionRatio="W,1:1"
             app:layout_constraintEnd_toEndOf="parent"
@@ -69,7 +96,7 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:fontFamily="@font/font_awesome"
-                android:text="&#x2b;"
+                android:text="&#xf00c;"
                 android:textSize="20sp"
                 app:layout_constraintBottom_toBottomOf="parent"
                 app:layout_constraintEnd_toEndOf="parent"

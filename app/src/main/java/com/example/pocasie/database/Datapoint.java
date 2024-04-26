@@ -2,14 +2,15 @@ package com.example.pocasie.database;
 
 import android.content.ContentValues;
 import android.database.Cursor;
-import android.provider.ContactsContract;
 import android.util.Log;
 
-import java.text.ParseException;
+import androidx.annotation.DrawableRes;
+
+import com.example.pocasie.R;
+
 import java.time.DateTimeException;
 import java.time.LocalDate;
 import java.time.LocalTime;
-import java.util.Date;
 
 import orm.Database;
 import orm.Model;
@@ -18,7 +19,21 @@ import orm.ModelFactory;
 public class Datapoint implements Model {
 
     public static final String[] weather_const = {
-            "clear", "cloudy", "rain", "heavy rain", "drizzle", "thunderstorm", "fog", "snow", "heavy snow"
+            "clear", "cloudy", "rain", "heavy rain", "drizzle", "thunderstorm", "snow", "blizzard",
+            "fog", "wind"
+    };
+
+    public static final @DrawableRes int[] weahter_icon = {
+            R.drawable.weather_clear,
+            R.drawable.weather_cloudy,
+            R.drawable.weather_rain,
+            R.drawable.weather_heavy_rain,
+            R.drawable.weather_drizzle,
+            R.drawable.weather_thunderstorm,
+            R.drawable.weather_snow,
+            R.drawable.weather_blizzard,
+            R.drawable.weather_fog,
+            R.drawable.weather_wind
     };
 
     public static final int temp_min = -10000;
